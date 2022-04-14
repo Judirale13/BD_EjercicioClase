@@ -33,7 +33,7 @@ public class ControladorInicio {
     @PostMapping("/guardar")
     public String guardar(Persona persona){
         personaService.guardar(persona);
-        return "redirect:/";
+        return "index";
     }
 
     @GetMapping("/editar/{idPersona}")
